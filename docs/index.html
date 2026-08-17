@@ -3,224 +3,194 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jiahuan Long | Academic Portfolio</title>
+    <title>Jiahuan Long | Academic Homepage</title>
     <meta
       name="description"
-      content="Academic portfolio for research, publications, teaching, and collaboration."
+      content="Academic homepage for Jiahuan Long, including research interests, news, publications, and contact information."
     />
-    <meta property="og:title" content="Jiahuan Long | Academic Portfolio" />
+    <meta property="og:title" content="Jiahuan Long | Academic Homepage" />
     <meta
       property="og:description"
-      content="Academic portfolio for research, publications, teaching, and collaboration."
+      content="Research interests, news, publications, and contact information."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./og.png" />
+    <meta property="og:image" content="./profile.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jiahuan Long | Academic Portfolio" />
+    <meta name="twitter:title" content="Jiahuan Long | Academic Homepage" />
     <meta
       name="twitter:description"
-      content="Academic portfolio for research, publications, teaching, and collaboration."
+      content="Research interests, news, publications, and contact information."
     />
-    <meta name="twitter:image" content="./og.png" />
+    <meta name="twitter:image" content="./profile.jpg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="topbar" aria-label="Primary navigation">
-      <a class="wordmark" href="#top" aria-label="Jiahuan Long home">
-        <span>JL</span>
-        <strong>Jiahuan Long</strong>
-      </a>
-      <nav class="nav-links" aria-label="Section navigation">
-        <a href="#research">Research</a>
+    <header class="site-header">
+      <a class="site-title" href="#top">Jiahuan Long</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
         <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main class="site-shell">
-      <section class="hero-section" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow">Academic Portfolio</p>
-          <h1>Jiahuan Long</h1>
-          <p class="hero-title">
-            Researcher in human-centered AI, learning analytics, and
-            computational methods.
-          </p>
-          <p class="hero-summary">
-            I study how intelligent systems can support people in research,
-            learning, and decision-making. My work blends empirical inquiry,
-            data analysis, and interface design to build tools that are useful
-            in real academic and professional settings.
-          </p>
-          <div class="hero-actions" aria-label="Primary links">
-            <a href="#publications">View Publications</a>
+    <main class="page" id="top">
+      <section class="profile">
+        <aside class="profile-card">
+          <img src="./profile.jpg" alt="Portrait of Jiahuan Long" />
+          <div class="profile-links" aria-label="Academic profile links">
             <a href="mailto:hello@example.edu">Email</a>
+            <a href="https://scholar.google.com" target="_blank" rel="noreferrer">
+              Google Scholar
+            </a>
+            <a href="https://github.com/Jiahuan-Long" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
           </div>
-        </div>
+        </aside>
 
-        <aside class="profile-panel" aria-label="Research profile summary">
-          <div class="portrait-mark" aria-hidden="true">JL</div>
-          <div>
-            <p class="panel-kicker">Current Focus</p>
-            <h2>Transparent AI for knowledge work</h2>
-            <p>
-              Building and evaluating AI-assisted workflows where evidence,
-              uncertainty, and human judgment remain visible.
-            </p>
-          </div>
-          <dl class="quick-facts">
+        <div class="profile-main">
+          <h1>Jiahuan Long</h1>
+          <p class="role">Researcher in Human-Centered AI and Learning Analytics</p>
+
+          <dl class="facts" id="contact">
             <div>
-              <dt>Affiliation</dt>
-              <dd>University / Research Lab</dd>
+              <dt>Contact:</dt>
+              <dd>hello@example.edu</dd>
             </div>
             <div>
-              <dt>Location</dt>
-              <dd>Shanghai / Remote</dd>
+              <dt>Affiliation:</dt>
+              <dd>University / Research Lab, Shanghai</dd>
             </div>
             <div>
-              <dt>Open To</dt>
-              <dd>Collaboration, talks, supervision</dd>
+              <dt>Research:</dt>
+              <dd>Human-centered AI, learning analytics, computational methods</dd>
             </div>
           </dl>
-        </aside>
-      </section>
-
-      <section class="metrics-strip" aria-label="Academic highlights">
-        <div>
-          <strong>3</strong>
-          <span>Research Areas</span>
-        </div>
-        <div>
-          <strong>6+</strong>
-          <span>Selected Papers</span>
-        </div>
-        <div>
-          <strong>4</strong>
-          <span>Active Projects</span>
         </div>
       </section>
 
-      <section class="content-section split-section" id="research">
-        <div>
-          <p class="section-label">Research</p>
-          <h2>Questions I Keep Returning To</h2>
-        </div>
-        <div class="theme-grid">
-          <article class="theme-card">
-            <h3>Human-Centered AI</h3>
-            <p>
-              Designing intelligent systems that remain legible, useful, and
-              accountable in expert workflows.
-            </p>
-          </article>
-          <article class="theme-card">
-            <h3>Learning Analytics</h3>
-            <p>
-              Studying how data-rich environments can support better feedback,
-              reflection, and learning outcomes.
-            </p>
-          </article>
-          <article class="theme-card">
-            <h3>Computational Methods</h3>
-            <p>
-              Combining empirical analysis, modeling, and careful interface
-              design to answer applied research questions.
-            </p>
-          </article>
-        </div>
+      <hr />
+
+      <section class="section" id="about">
+        <p>
+          I am a researcher interested in how intelligent systems can support
+          learning, research, and decision-making. My work combines empirical
+          study, data analysis, and interface design, with a focus on building
+          AI-assisted workflows that remain transparent, useful, and accountable
+          to people.
+        </p>
+        <p>
+          More broadly, I care about the relationship between computation and
+          human judgment: how models represent evidence, where automated systems
+          fail, and how careful design can make those limits easier to notice,
+          discuss, and improve.
+        </p>
+        <p class="note">I am open to research collaboration, academic talks, and project discussions.</p>
       </section>
 
-      <section class="content-section" id="publications">
+      <hr />
+
+      <section class="section" id="news">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <time>2026.08</time>
+            <span>Launched this academic homepage on GitHub Pages.</span>
+          </li>
+          <li>
+            <time>2026.06</time>
+            <span>Preparing new work on transparent AI tools for research workflows.</span>
+          </li>
+          <li>
+            <time>2025.12</time>
+            <span>Continuing projects in learning analytics and human-AI collaboration.</span>
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section class="section" id="publications">
         <div class="section-heading">
-          <p class="section-label">Publications</p>
-          <h2>Selected Work</h2>
+          <h2>Selected Publications</h2>
+          <a href="#publications">Selected</a>
         </div>
-        <div class="publication-list">
-          <article class="publication-card">
-            <time>2026</time>
-            <div>
-              <h3>Designing Transparent AI Tools for Research and Learning Workflows</h3>
-              <p>Jiahuan Long, A. Collaborator, B. Researcher</p>
-              <span>Conference on Human-Computer Interaction | Under review</span>
+
+        <ol class="publication-list">
+          <li class="publication">
+            <div class="pub-body">
+              <p class="venue">arXiv</p>
+              <h3>
+                <a href="#">Designing Transparent AI Tools for Research and Learning Workflows</a>
+              </h3>
+              <p class="authors">
+                <strong>Jiahuan Long</strong>, A. Collaborator, and B. Researcher
+              </p>
+              <p class="where">arXiv preprint, 2026</p>
+              <p class="links">
+                <a href="#">Bib</a>
+                <a href="#">arXiv</a>
+                <a href="#">Code</a>
+              </p>
             </div>
-          </article>
-          <article class="publication-card">
-            <time>2025</time>
-            <div>
-              <h3>Data-Informed Feedback Loops in Digital Learning Environments</h3>
-              <p>Jiahuan Long, C. Scholar</p>
-              <span>Journal of Learning Sciences | Article</span>
+            <div class="pub-thumb teal" aria-hidden="true">
+              <span>AI</span>
             </div>
-          </article>
-          <article class="publication-card">
-            <time>2024</time>
-            <div>
-              <h3>Evaluating Human-AI Collaboration in Analytical Decision Making</h3>
-              <p>D. Scientist, Jiahuan Long</p>
-              <span>Proceedings of CSCW | Conference paper</span>
+          </li>
+
+          <li class="publication">
+            <div class="pub-body">
+              <p class="venue">Journal</p>
+              <h3>
+                <a href="#">Data-Informed Feedback Loops in Digital Learning Environments</a>
+              </h3>
+              <p class="authors"><strong>Jiahuan Long</strong> and C. Scholar</p>
+              <p class="where">Journal of Learning Sciences, 2025</p>
+              <p class="links">
+                <a href="#">Bib</a>
+                <a href="#">PDF</a>
+              </p>
             </div>
-          </article>
-        </div>
+            <div class="pub-thumb gold" aria-hidden="true">
+              <span>LA</span>
+            </div>
+          </li>
+
+          <li class="publication">
+            <div class="pub-body">
+              <p class="venue">CSCW</p>
+              <h3>
+                <a href="#">Evaluating Human-AI Collaboration in Analytical Decision Making</a>
+              </h3>
+              <p class="authors">D. Scientist and <strong>Jiahuan Long</strong></p>
+              <p class="where">Proceedings of CSCW, 2024</p>
+              <p class="links">
+                <a href="#">Bib</a>
+                <a href="#">Paper</a>
+              </p>
+            </div>
+            <div class="pub-thumb plum" aria-hidden="true">
+              <span>HCI</span>
+            </div>
+          </li>
+        </ol>
       </section>
 
-      <section class="content-section split-section" id="teaching">
-        <div>
-          <p class="section-label">Teaching & Service</p>
-          <h2>Academic Experience</h2>
-          <p class="section-copy">
-            Course support, mentoring, manuscript review, and collaborative
-            research practice are part of the same intellectual work: helping
-            ideas become clearer, stronger, and more useful.
-          </p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <span>2024 - Present</span>
-            <h3>Researcher</h3>
-            <p class="timeline-place">Intelligent Systems Lab</p>
-            <p>
-              Leading studies on interactive AI systems, evidence-centered
-              design, and evaluation methods.
-            </p>
-          </article>
-          <article class="timeline-item">
-            <span>2022 - 2024</span>
-            <h3>Graduate Research Assistant</h3>
-            <p class="timeline-place">University Research Group</p>
-            <p>
-              Built research prototypes, analyzed user-study data, and
-              co-authored peer-reviewed manuscripts.
-            </p>
-          </article>
-          <article class="timeline-item">
-            <span>2021 - 2022</span>
-            <h3>Teaching Assistant</h3>
-            <p class="timeline-place">Data Science Program</p>
-            <p>
-              Supported courses in statistics, programming, and research
-              methods.
-            </p>
-          </article>
-        </div>
-      </section>
+      <hr />
 
-      <section class="contact-band" id="contact">
-        <div>
-          <p class="section-label">Contact</p>
-          <h2>For collaboration, talks, or research conversations.</h2>
-        </div>
-        <div class="contact-links" aria-label="Contact and profile links">
-          <a href="mailto:hello@example.edu">hello@example.edu</a>
-          <a href="https://scholar.google.com" target="_blank" rel="noreferrer">
-            Google Scholar
-          </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-        </div>
+      <section class="section compact">
+        <h2>Research Interests</h2>
+        <p>
+          Human-centered AI · Learning analytics · Research tools · Human-AI
+          collaboration · Computational social science · Responsible AI
+        </p>
       </section>
     </main>
+
+    <footer>
+      © 2026 Jiahuan Long. Powered by GitHub Pages.
+    </footer>
   </body>
 </html>
