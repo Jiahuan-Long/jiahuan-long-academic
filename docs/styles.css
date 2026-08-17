@@ -52,15 +52,22 @@ a:focus-visible {
   padding: 18px 24px;
 }
 
-.site-title {
-  color: var(--text);
-  font-size: 1.05rem;
-  font-weight: 700;
+.site-logo {
+  align-items: center;
+  display: inline-flex;
+  min-width: 180px;
 }
 
-.site-title:hover,
-.site-title:focus-visible {
-  color: var(--text);
+.site-logo img {
+  display: block;
+  height: auto;
+  width: 190px;
+}
+
+.site-logo:hover,
+.site-logo:focus-visible {
+  outline: none;
+  text-decoration: none;
 }
 
 nav {
