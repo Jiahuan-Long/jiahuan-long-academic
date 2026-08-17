@@ -170,6 +170,16 @@ hr {
   margin-bottom: 0;
 }
 
+.recruitment-note {
+  background: #fffbea;
+  border: 1px solid #dfd29a;
+  border-left: 4px solid #c49a2c;
+  border-radius: 4px;
+  color: #2d2b22;
+  margin-top: 18px;
+  padding: 11px 14px;
+}
+
 .note {
   color: #333333;
   font-weight: 700;
