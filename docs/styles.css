@@ -334,6 +334,25 @@ h2 {
   padding: 9px 13px;
 }
 
+.pub-thumb.publication-figure {
+  aspect-ratio: 1200 / 486;
+  background: #ffffff;
+}
+
+.publication-figure img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.publication-figure:hover,
+.publication-figure:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
 .pub-thumb.teal {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.22) 25%, transparent 25%) 0 0 / 22px 22px,
