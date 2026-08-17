@@ -269,7 +269,7 @@ h2 {
 
 .author-marker,
 .corresponding-author {
-  color: var(--link-hover);
+  color: inherit;
   font-size: 0.78em;
   font-weight: 700;
   line-height: 0;
