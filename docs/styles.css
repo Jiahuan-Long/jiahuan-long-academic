@@ -374,6 +374,15 @@ h2 {
   color: #333333;
 }
 
+.awards-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.awards-list li + li {
+  margin-top: 4px;
+}
+
 footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
