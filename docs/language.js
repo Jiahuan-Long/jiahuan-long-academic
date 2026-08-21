@@ -60,9 +60,7 @@ const languageContent = document.querySelectorAll("[data-language-content]");
 function setLanguage(language) {
   const selectedLanguage = translations[language] ? language : "en";
   document.documentElement.lang = selectedLanguage === "zh" ? "zh-CN" : "en";
-  document.title = selectedLanguage === "zh"
-    ? "龙佳欢个人主页 | 深圳大学"
-    : "Jiahuan Long's Homepage | Shenzhen University";
+  document.title = "Jiahuan Long (龙佳欢) | Shenzhen University";
 
   translatedElements.forEach((element) => {
     const key = element.dataset.i18n;
