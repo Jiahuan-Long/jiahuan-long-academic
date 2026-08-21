@@ -78,18 +78,25 @@
       }
     </script>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./language.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="site-logo" href="https://www.szu.edu.cn/" target="_blank" rel="noreferrer" aria-label="Shenzhen University">
         <img src="./szu-logo.png" alt="Shenzhen University" />
       </a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Main navigation">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#news" data-i18n="nav.news">News</a>
+          <a href="#publications" data-i18n="nav.publications">Publications</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+          <button type="button" data-language="zh" aria-pressed="false">中文</button>
+        </div>
+      </div>
     </header>
 
     <main class="page" id="top">
@@ -97,7 +104,7 @@
         <aside class="profile-card">
           <img src="./profile.jpg" alt="Portrait of Jiahuan Long" />
           <div class="profile-links" aria-label="Academic profile links">
-            <a href="mailto:jiahuanlong@szu.edu.cn">Email</a>
+            <a href="mailto:jiahuanlong@szu.edu.cn" data-i18n="profile.emailLink">Email</a>
             <a href="https://scholar.google.com/citations?user=DfcU0TUAAAAJ&hl=en" target="_blank" rel="noreferrer">
               Google Scholar
             </a>
@@ -106,25 +113,25 @@
         </aside>
 
         <div class="profile-main">
-          <h1>Jiahuan Long</h1>
-          <p class="role"><strong>Assistant Professor (Hundred Talents Program), Ph.D. Supervisor</strong></p>
+          <h1 data-i18n="profile.name">Jiahuan Long</h1>
+          <p class="role"><strong data-i18n="profile.role">Assistant Professor (Hundred Talents Program), Ph.D. Supervisor</strong></p>
 
           <dl class="facts" id="contact">
             <div>
-              <dt>Email:</dt>
+              <dt data-i18n="facts.email">Email:</dt>
               <dd>jiahuanlong(at)szu.edu.cn</dd>
             </div>
             <div>
-              <dt>Affiliation:</dt>
-              <dd>School of Artificial Intelligence, Shenzhen University</dd>
+              <dt data-i18n="facts.affiliation">Affiliation:</dt>
+              <dd data-i18n="facts.affiliationValue">School of Artificial Intelligence, Shenzhen University</dd>
             </div>
             <div>
-              <dt>Office:</dt>
-              <dd>Room 822, Huiyan Building, Yuehai Campus</dd>
+              <dt data-i18n="facts.office">Office:</dt>
+              <dd data-i18n="facts.officeValue">Room 822, Huiyan Building, Yuehai Campus</dd>
             </div>
             <div>
-              <dt>Research:</dt>
-              <dd>Visual adversarial attacks, Embodied AI security, VLLM security</dd>
+              <dt data-i18n="facts.research">Research:</dt>
+              <dd data-i18n="facts.researchValue">Visual adversarial attacks, Embodied AI security, VLLM security</dd>
             </div>
           </dl>
         </div>
@@ -133,38 +140,45 @@
       <hr />
 
       <section class="section" id="about">
-        <p>
+        <p data-language-content="en">
           I am an Assistant Professor (Hundred Talents Program) at Shenzhen University.
-          Before joining Shenzhen University, I completed my Ph.D. study from Shanghai Jiao Tong University, supervised by
+          Before joining Shenzhen University, I completed my Ph.D. from Shanghai Jiao Tong University in 2026, supervised by
           <a href="https://baike.baidu.com/item/%E9%99%88%E5%B0%8F%E5%89%8D/54198662" target="_blank" rel="noreferrer">Prof. Xiaoqian Chen</a>
           and
           <a href="https://vision.sjtu.edu.cn/" target="_blank" rel="noreferrer">Prof. Chao Ma</a>.
-          I also received joint doctoral training at the Chinese Academy of Military Science, supervised by
+          During 2022 to 2026, I was a joint-training PhD student at the Chinese Academy of Military Science, supervised by
           <a href="https://baike.baidu.com/item/%E5%A7%9A%E9%9B%AF/61775797?fr=aladdin" target="_blank" rel="noreferrer">Prof. Wen Yao</a>
           and
           <a href="https://scholar.google.com/citations?user=i77rUBEAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer">Prof. Tingsong Jiang</a>.
-          Before that, I received my master's degrees from the University of Electronic
-          Science and Technology of China and the University of Edinburgh in
-          2020 and 2021, respectively.
+          Before that, I received my master's degrees from the University of Electronic Science and Technology of China (UESTC) and the University of Edinburgh in 2020 and 2021, respectively.
           At UESTC, I was supervised by
           <a href="https://baike.baidu.com/item/%E5%BC%A0%E5%8F%AF/20212791" target="_blank" rel="noreferrer">Prof. Ke Zhang</a>
           and
           <a href="https://en.uestc.edu.cn/info/1074/1672.htm" target="_blank" rel="noreferrer">Prof. Xiaofen Wang</a>.
           My research interests include visual adversarial attacks, embodied AI security, and multimodal large language model security.
         </p>
-        <p class="recruitment-note">
+        <p data-language-content="zh" hidden>
+          2026年8月，我加入深圳大学，任“百人计划”助理教授，博士生导师。同年6月，获得上海交通大学博士学位，师从<a href="https://baike.baidu.com/item/%E9%99%88%E5%B0%8F%E5%89%8D/54198662" target="_blank" rel="noreferrer">陈小前院士</a>和<a href="https://vision.sjtu.edu.cn/" target="_blank" rel="noreferrer">马超教授</a>。
+          2022年至2026年，我在中国人民解放军军事科学院进行博士联合培养，联合培养导师为<a href="https://baike.baidu.com/item/%E5%A7%9A%E9%9B%AF/61775797?fr=aladdin" target="_blank" rel="noreferrer">姚雯教授</a>和<a href="https://scholar.google.com/citations?user=i77rUBEAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer">姜廷松教授</a>。
+          此前，我于2020年和2021年分别获得电子科技大学（UESTC）和爱丁堡大学硕士学位。在电子科技大学学习期间，师从<a href="https://baike.baidu.com/item/%E5%BC%A0%E5%8F%AF/20212791" target="_blank" rel="noreferrer">张可教授</a>和<a href="https://en.uestc.edu.cn/info/1074/1672.htm" target="_blank" rel="noreferrer">汪小芬教授</a>。
+          我的研究兴趣包括视觉对抗攻击、具身智能安全和大模型安全。
+        </p>
+        <p class="recruitment-note" data-language-content="en">
           <strong>I am recruiting Ph.D. and master's students to work on AI security for Fall 2027. Undergraduate students interested in gaining research experience are also welcome to join our group. Feel free to contact me!</strong>
+        </p>
+        <p class="recruitment-note" data-language-content="zh" hidden>
+          <strong>现招收2027年秋季入学人工智能方向的博士生和硕士生，同时，也欢迎有志于参与科研的本科生加入课题组。我将结合学生的研究兴趣与职业发展规划，制定个性化培养方案，欢迎邮件与我联系！</strong>
         </p>
       </section>
 
       <hr />
 
       <section class="section" id="news">
-        <h2>News</h2>
+        <h2 data-i18n="sections.news">News</h2>
         <ul class="news-list">
           <li>
             <time><strong>2026.08</strong></time>
-            <span><strong>Excited to join the School of Artificial Intelligence at Shenzhen University! 🎉</strong></span>
+            <span><strong data-i18n="news.joined">Excited to join the School of Artificial Intelligence at Shenzhen University! 🎉</strong></span>
           </li>
         </ul>
       </section>
@@ -173,8 +187,8 @@
 
       <section class="section" id="publications">
         <div class="section-heading">
-          <h2>Selected Papers</h2>
-          <a href="#publications">Selected</a>
+          <h2 data-i18n="sections.papers">Selected Papers</h2>
+          <a href="#publications" data-i18n="sections.selected">Selected</a>
         </div>
 
         <ol class="publication-list">
@@ -186,13 +200,20 @@
               <p class="authors">
                 <strong>Jiahuan Long</strong>, Tingsong Jiang, Hanqing Liu, Chao Ma, Weien Zhou, Yang Yang, and Wen Yao
               </p>
-              <p class="where">CVPR 2026 (Highlight)</p>
+              <p class="where">CVPR 2026 (Highlight, CCF A)</p>
               <p class="links">
                 <a href="https://arxiv.org/abs/2511.09829" target="_blank" rel="noreferrer">arXiv</a>
+                <button class="link-button" type="button" data-bibtex-target="bib-thermal-clothing" aria-expanded="false">BibTeX</button>
                 <a href="./videos/cvpr1.mp4" target="_blank" rel="noreferrer">Video 1</a>
                 <a href="./videos/cvpr2.mp4" target="_blank" rel="noreferrer">Video 2</a>
                 <a href="./videos/cvpr3.mp4" target="_blank" rel="noreferrer">Video 3</a>
               </p>
+              <pre class="bibtex-entry" id="bib-thermal-clothing" hidden><code>@inproceedings{long2026thermalclothing,
+  title={Thermally Activated Dual-Modal Adversarial Clothing against AI Surveillance Systems},
+  author={Long, Jiahuan and Jiang, Tingsong and Liu, Hanqing and Ma, Chao and Zhou, Weien and Yang, Yang and Yao, Wen},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026}
+}</code></pre>
             </div>
             <a class="pub-thumb publication-figure" href="./publication-figures/thermal-clothing.png" target="_blank" rel="noreferrer" aria-label="View the Thermally Activated Dual-Modal Adversarial Clothing figure">
               <img src="./publication-figures/thermal-clothing.png" alt="Overview of thermally activated dual-modal adversarial clothing" />
@@ -207,12 +228,19 @@
               <p class="authors">
                 <strong>Jiahuan Long</strong>, Wen Yao, Tingsong Jiang, Jiacheng Hou, Shuai Jia, Junqi Wu, Xiaoya Zhang, Xiaohu Zheng, and Chao Ma
               </p>
-              <p class="where">ACM Multimedia 2025 (Oral)</p>
+              <p class="where">ACM MM 2025 (Oral, CCF A)</p>
               <p class="links">
                 <a href="https://arxiv.org/abs/2504.10888" target="_blank" rel="noreferrer">arXiv</a>
+                <button class="link-button" type="button" data-bibtex-target="bib-cdupatch" aria-expanded="false">BibTeX</button>
                 <a href="https://github.com/Jiahuan-Long/CDUpatch" target="_blank" rel="noreferrer">Code</a>
                 <a href="./videos/cdupatch.mp4" target="_blank" rel="noreferrer">Video</a>
               </p>
+              <pre class="bibtex-entry" id="bib-cdupatch" hidden><code>@inproceedings{long2025cdupatch,
+  title={Cdupatch: Color-driven universal adversarial patch attack for dual-modal visible-infrared detectors},
+  author={Long, Jiahuan and Yao, Wen and Jiang, Tingsong and Hou, Jiacheng and Jia, Shuai and Wu, Junqi and Zhang, Xiaoya and Zheng, Xiaohu and Ma, Chao},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM)},
+  year={2025}
+}</code></pre>
             </div>
             <a class="pub-thumb publication-figure" href="./publication-figures/cdupatch.png" target="_blank" rel="noreferrer" aria-label="View the CDUPatch framework figure">
               <img src="./publication-figures/cdupatch.png" alt="CDUPatch RGB-to-infrared adaptation and cross-modal training framework" />
@@ -227,11 +255,18 @@
               <p class="authors">
                 <strong>Jiahuan Long</strong>, Zhengqin Xu, Tingsong Jiang, Wen Yao, Shuai Jia, Chao Ma, and Xiaoqian Chen
               </p>
-              <p class="where">AAAI 2025</p>
+              <p class="where">AAAI 2025 (CCF A)</p>
               <p class="links">
                 <a href="https://arxiv.org/abs/2504.08906" target="_blank" rel="noreferrer">arXiv</a>
+                <button class="link-button" type="button" data-bibtex-target="bib-robust-sam" aria-expanded="false">BibTeX</button>
                 <a href="./videos/robustsam.mp4" target="_blank" rel="noreferrer">Video</a>
               </p>
+              <pre class="bibtex-entry" id="bib-robust-sam" hidden><code>@inproceedings{long2025robustsam,
+  title={Robust SAM: On the Adversarial Robustness of Vision Foundation Models},
+  author={Long, Jiahuan and Xu, Zhengqin and Jiang, Tingsong and Yao, Wen and Jia, Shuai and Ma, Chao and Chen, Xiaoqian},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
+  year={2025}
+}</code></pre>
             </div>
             <a class="pub-thumb publication-figure" href="./publication-figures/robust-sam.png" target="_blank" rel="noreferrer" aria-label="View the Robust SAM framework figure">
               <img src="./publication-figures/robust-sam.png" alt="Robust SAM attack and defense framework" />
@@ -246,11 +281,18 @@
               <p class="authors">
                 <strong>Jiahuan Long</strong>, Tingsong Jiang, Wen Yao, Shuai Jia, Weijia Zhang, Weien Zhou, Chao Ma, and Xiaoqian Chen
               </p>
-              <p class="where">ECCV 2024</p>
+              <p class="where">ECCV 2024 (CSRankings)</p>
               <p class="links">
                 <a href="https://arxiv.org/abs/2504.09361" target="_blank" rel="noreferrer">arXiv</a>
+                <button class="link-button" type="button" data-bibtex-target="bib-papmot" aria-expanded="false">BibTeX</button>
                 <a href="./videos/papmot.mp4" target="_blank" rel="noreferrer">Video</a>
               </p>
+              <pre class="bibtex-entry" id="bib-papmot" hidden><code>@inproceedings{long2024papmot,
+  title={PapMOT: Exploring Adversarial Patch Attack against Multiple Object Tracking},
+  author={Long, Jiahuan and Jiang, Tingsong and Yao, Wen and Jia, Shuai and Zhang, Weijia and Zhou, Weien and Ma, Chao and Chen, Xiaoqian},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2024}
+}</code></pre>
             </div>
             <a class="pub-thumb publication-figure" href="./publication-figures/papmot.png" target="_blank" rel="noreferrer" aria-label="View the PapMOT framework figure">
               <img src="./publication-figures/papmot.png" alt="PapMOT training and attack framework" />
@@ -265,11 +307,18 @@
               <p class="authors">
                 <strong>Jiahuan Long</strong>, Tingsong Jiang, Wen Yao, Yizhe Xiong, Zhengqin Xu, Shuai Jia, Hanqing Liu, and Chao Ma
               </p>
-              <p class="where">AAAI 2026</p>
+              <p class="where">AAAI 2026 (CCF A)</p>
               <p class="links">
                 <a href="https://arxiv.org/abs/2504.08915" target="_blank" rel="noreferrer">arXiv</a>
+                <button class="link-button" type="button" data-bibtex-target="bib-parameter-free" aria-expanded="false">BibTeX</button>
                 <a href="https://github.com/Jiahuan-Long/parameter-free-finetuning" target="_blank" rel="noreferrer">Code</a>
               </p>
+              <pre class="bibtex-entry" id="bib-parameter-free" hidden><code>@inproceedings{long2026parameterfree,
+  title={Parameter-Free Fine-tuning via Redundancy Elimination for Vision Foundation Models},
+  author={Long, Jiahuan and Jiang, Tingsong and Yao, Wen and Xiong, Yizhe and Xu, Zhengqin and Jia, Shuai and Liu, Hanqing and Ma, Chao},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
+  year={2026}
+}</code></pre>
             </div>
             <a class="pub-thumb publication-figure" href="./publication-figures/parameter-free.png" target="_blank" rel="noreferrer" aria-label="View the parameter-free fine-tuning pipeline figure">
               <img src="./publication-figures/parameter-free.png" alt="Parameter-free channel replacement search pipeline" />
@@ -284,10 +333,17 @@
               <p class="authors">
                 Chengyin Hu, Xuemeng Sun, Jiaju Han, Qike Zhang, Xiang Chen, Xin Wang, Yiwei Wei, and <strong>Jiahuan Long</strong><sup class="corresponding-author" title="Corresponding author" aria-label="Corresponding author">&#9993;</sup>
               </p>
-              <p class="where">ACM Multimedia, 2026</p>
+              <p class="where">ACM MM 2026 (CCF A)</p>
               <p class="links">
                 <a href="https://arxiv.org/abs/2603.27759" target="_blank" rel="noreferrer">arXiv</a>
+                <button class="link-button" type="button" data-bibtex-target="bib-when-surfaces-lie" aria-expanded="false">BibTeX</button>
               </p>
+              <pre class="bibtex-entry" id="bib-when-surfaces-lie" hidden><code>@inproceedings{hu2026surfaces,
+  title={When Surfaces Lie: Exploiting Wrinkle-Induced Attention Shift to Attack Vision-Language Models},
+  author={Hu, Chengyin and Sun, Xuemeng and Han, Jiaju and Zhang, Qike and Chen, Xiang and Wang, Xin and Wei, Yiwei and Long, Jiahuan},
+  booktitle={Proceedings of the 34th ACM International Conference on Multimedia (ACM MM)},
+  year={2026}
+}</code></pre>
             </div>
             <a class="pub-thumb publication-figure" href="./publication-figures/when-surfaces-lie.png" target="_blank" rel="noreferrer" aria-label="View the wrinkle-based structural attack framework figure">
               <img src="./publication-figures/when-surfaces-lie.png" alt="Wrinkle-based structural attack framework" />
@@ -305,8 +361,15 @@
               <p class="where">arXiv, 2025</p>
               <p class="links">
                 <a href="https://arxiv.org/abs/2509.18953" target="_blank" rel="noreferrer">arXiv</a>
+                <button class="link-button" type="button" data-bibtex-target="bib-eva-vla" aria-expanded="false">BibTeX</button>
                 <a href="./videos/eva-vla.mp4" target="_blank" rel="noreferrer">Video</a>
               </p>
+              <pre class="bibtex-entry" id="bib-eva-vla" hidden><code>@article{liu2025evavla,
+  title={Eva-VLA: Evaluating Vision-Language-Action Models' Robustness Under Real-World Physical Variations},
+  author={Liu, Hanqing and Ruan, Shouwei and Long, Jiahuan and Wu, Junqi and Hou, Jiacheng and Tang, Huili and Jiang, Tingsong and Zhou, Weien and Yao, Wen},
+  journal={arXiv preprint arXiv:2509.18953},
+  year={2025}
+}</code></pre>
             </div>
             <a class="pub-thumb publication-figure" href="./publication-figures/eva-vla.png" target="_blank" rel="noreferrer" aria-label="View the Eva-VLA framework figure">
               <img src="./publication-figures/eva-vla.png" alt="Overview of the Eva-VLA robustness evaluation framework" />
@@ -324,8 +387,15 @@
               <p class="where">arXiv, 2026</p>
               <p class="links">
                 <a href="https://arxiv.org/abs/2608.06801" target="_blank" rel="noreferrer">arXiv</a>
+                <button class="link-button" type="button" data-bibtex-target="bib-advtiles" aria-expanded="false">BibTeX</button>
                 <a href="./videos/advtiles.mp4" target="_blank" rel="noreferrer">Video</a>
               </p>
+              <pre class="bibtex-entry" id="bib-advtiles" hidden><code>@article{wang2026advtiles,
+  title={AdvTiles: Physical Adversarial Camouflage Clothing against Person Detectors via Learnable Tiles},
+  author={Wang, Jinlei and Long, Jiahuan and Sun, Mingkai and Guo, Yafei and Huang, Yuanhao and Wang, Ming and Wu, Junqi and Hou, Jiacheng and Chen, Hongbo and Wei, Xingxing and Jiang, Tingsong and Yao, Wen},
+  journal={arXiv preprint arXiv:2608.06801},
+  year={2026}
+}</code></pre>
             </div>
             <a class="pub-thumb publication-figure" href="./publication-figures/advtiles.jpg" target="_blank" rel="noreferrer" aria-label="View the AdvTiles framework figure">
               <img src="./publication-figures/advtiles.jpg" alt="AdvTiles differentiable camouflage and physical rendering framework" />
@@ -337,17 +407,17 @@
       <hr />
 
       <section class="section compact">
-        <h2>Awards</h2>
+        <h2 data-i18n="sections.awards">Awards</h2>
         <ul class="awards-list">
-          <li>Outstanding Graduate, Shanghai Jiao Tong University</li>
-          <li>BYD Scholarship, Shanghai Jiao Tong University</li>
-          <li>National Scholarship, University of Electronic Science and Technology of China</li>
-          <li>Master of Science with Distinction, University of Edinburgh</li>
+          <li data-i18n="awards.sjtuGraduate">Outstanding Graduate, Shanghai Jiao Tong University</li>
+          <li data-i18n="awards.byd">BYD Scholarship, Shanghai Jiao Tong University</li>
+          <li data-i18n="awards.national">National Scholarship, University of Electronic Science and Technology of China</li>
+          <li data-i18n="awards.edinburgh">Master of Science with Distinction, University of Edinburgh</li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer data-i18n="footer">
       Copyright 2026 Jiahuan Long. Powered by GitHub Pages.
     </footer>
   </body>
